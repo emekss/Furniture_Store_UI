@@ -8,9 +8,6 @@ class StartPage extends StatefulWidget {
 }
 
 class _StartPageState extends State<StartPage> {
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,31 +16,55 @@ class _StartPageState extends State<StartPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const SafeArea(child: Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(Icons.chair, color: Colors.orange, size: 25,),
-                  Text(' Furno.co', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),)
-                ],
+            const SafeArea(
+              child: Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.chair,
+                      color: Colors.orange,
+                      size: 25,
+                    ),
+                    Text(
+                      ' Furno.co',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
-            ),
             Image.asset('assets/images/chair.jpeg'),
-            const Text('Modern Furniture for your home', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50,),),
+            const Text(
+              'Modern Furniture for your home',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 50,
+              ),
+            ),
             Container(
               height: 45,
               width: 320,
               decoration: BoxDecoration(
-                color: Colors.orange,
-                borderRadius: BorderRadius.circular(25) 
-              ),
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.circular(25)),
               child: GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, '/homePage');
-                },
-                child: const Center(child: Text('Get Started', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),),)),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/homePage');
+                  },
+                  child: const Center(
+                    child: Text(
+                      'Get Started',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  )),
             )
           ],
         ),
