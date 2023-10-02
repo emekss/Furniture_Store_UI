@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jersey_shop_app/home_page.dart';
-import 'package:jersey_shop_app/start_page.dart';
+import 'package:jersey_shop_app/pages/home_page.dart';
+import 'package:jersey_shop_app/pages/start_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: const StartPage(),
       routes: {
-        '/homePage' :(context) => const HomePage(),
+        '/homePage': (context) => HomePage(),
       },
     );
   }

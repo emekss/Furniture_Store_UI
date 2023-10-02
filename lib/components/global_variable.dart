@@ -39,6 +39,14 @@ final products = [
         'A chair with a high back will provide optimum comfort. The chair is made from wooden legs',
     'imageUrl': 'assets/images/sofa.png',
   },
+  {
+    'id': '4',
+    'title': 'Sofa',
+    'price': 150.00,
+    'description':
+        'A chair with a high back will provide optimum comfort. The chair is made from wooden legs',
+    'imageUrl': 'assets/images/sofa.png',
+  },
 ];
 
 final cart = [
