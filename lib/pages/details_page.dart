@@ -17,7 +17,9 @@ class _DetailsPageState extends State<DetailsPage> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/homePage');
+            },
             icon: const Icon(
               Icons.arrow_back_ios,
               color: Colors.black,

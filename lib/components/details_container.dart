@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:jersey_shop_app/util/color_button.dart';
+import 'package:jersey_shop_app/util/quantity_counter_button.dart';
 import 'package:readmore/readmore.dart';
 
 class DetailsContainer extends StatelessWidget {
@@ -47,6 +49,8 @@ class DetailsContainer extends StatelessWidget {
                       fontSize: 17,
                     ),
                   ),
+                  ColorButton(color: Colors.blue),
+                  //QuantityCounterButton()
                 ],
               ),
             ),

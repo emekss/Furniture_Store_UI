@@ -85,19 +85,24 @@ class HomePage extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: ListView.builder(
-            controller: _controller,
-            scrollDirection: Axis.horizontal,
-            itemCount: products.length,
-            itemBuilder: (context, index) {
-              final product = products[index];
-              return ProductCard(
-                description: product['description'] as String,
-                imageUrl: product['imageUrl'] as String,
-                price: product['price'] as double,
-                title: product['title'] as String,
-              );
+          child: GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/detailsPage');
             },
+            child: ListView.builder(
+              controller: _controller,
+              scrollDirection: Axis.horizontal,
+              itemCount: products.length,
+              itemBuilder: (context, index) {
+                final product = products[index];
+                return ProductCard(
+                  description: product['description'] as String,
+                  imageUrl: product['imageUrl'] as String,
+                  price: product['price'] as double,
+                  title: product['title'] as String,
+                );
+              },
+            ),
           ),
         ),
       ]),
