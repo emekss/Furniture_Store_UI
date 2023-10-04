@@ -53,6 +53,19 @@ class _DetailsPageState extends State<DetailsPage> {
                     'assets/images/chair1.png',
                     height: 250,
                   ),
+                  const Row(
+                    children: [
+                      Icon(Icons.arrow_back_ios_new_outlined),
+                      Text(
+                        '360',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                        ),
+                      ),
+                      Icon(Icons.arrow_forward_ios_outlined)
+                    ],
+                  )
                 ],
               )
             ],
