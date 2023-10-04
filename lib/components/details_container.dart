@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jersey_shop_app/util/color_button.dart';
-import 'package:jersey_shop_app/util/quantity_counter_button.dart';
+import 'package:jersey_shop_app/util/custom_stepper.dart';
 import 'package:readmore/readmore.dart';
 
 class DetailsContainer extends StatelessWidget {
@@ -38,19 +38,24 @@ class DetailsContainer extends StatelessWidget {
             const Divider(
               color: Colors.grey,
             ),
-            const Padding(
-              padding: EdgeInsets.all(8.0),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  Text(
+                  const Text(
                     'Colors',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 17,
                     ),
                   ),
-                  ColorButton(color: Colors.blue),
-                  //QuantityCounterButton()
+                  const ColorButton(color: Colors.blue),
+                  CustomStepper(
+                      lowerLimit: 2,
+                      upperLimit: 1,
+                      stepValue: 2,
+                      iconSize: 20,
+                      value: 0)
                 ],
               ),
             ),
