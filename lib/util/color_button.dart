@@ -31,7 +31,7 @@ class _ColorButtonState extends State<ColorButton> {
               alignment: Alignment.center,
               children: [
                 Container(
-                  height: 30,
+                  height: 25,
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: colorList[index].isSelected
