@@ -25,18 +25,20 @@ class _CustomStepperState extends State<CustomStepper> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        IconButton(
-          icon: const Icon(Icons.remove),
-          iconSize: widget.iconSize,
-          onPressed: () {
-            setState(() {
-              widget.value = widget.value == widget.lowerLimit
-                  ? widget.lowerLimit
-                  : widget.value -= widget.stepValue;
-            });
-          },
+        Card(
+          child: IconButton(
+            icon: const Icon(Icons.remove),
+            iconSize: widget.iconSize,
+            onPressed: () {
+              setState(() {
+                widget.value = widget.value == widget.lowerLimit
+                    ? widget.lowerLimit
+                    : widget.value -= widget.stepValue;
+              });
+            },
+          ),
         ),
-        Container(
+        SizedBox(
           width: widget.iconSize,
           child: Text(
             '${widget.value}',
@@ -46,16 +48,18 @@ class _CustomStepperState extends State<CustomStepper> {
             textAlign: TextAlign.center,
           ),
         ),
-        IconButton(
-          icon: const Icon(Icons.add),
-          iconSize: widget.iconSize,
-          onPressed: () {
-            setState(() {
-              widget.value = widget.value == widget.upperLimit
-                  ? widget.upperLimit
-                  : widget.value += widget.stepValue;
-            });
-          },
+        Card(
+          child: IconButton(
+            icon: const Icon(Icons.add),
+            iconSize: widget.iconSize,
+            onPressed: () {
+              setState(() {
+                widget.value = widget.value == widget.upperLimit
+                    ? widget.upperLimit
+                    : widget.value += widget.stepValue;
+              });
+            },
+          ),
         ),
       ],
     );

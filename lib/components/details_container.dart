@@ -12,7 +12,12 @@ class DetailsContainer extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       elevation: 8,
       child: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: const EdgeInsets.only(
+          top: 16,
+          bottom: 16,
+          left: 3,
+          right: 3,
+        ),
         child: Column(
           children: [
             const Padding(
@@ -39,7 +44,10 @@ class DetailsContainer extends StatelessWidget {
               color: Colors.grey,
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.only(
+                top: 8,
+                bottom: 8,
+              ),
               child: Row(
                 children: [
                   const Text(
@@ -51,10 +59,10 @@ class DetailsContainer extends StatelessWidget {
                   ),
                   const ColorButton(color: Colors.blue),
                   CustomStepper(
-                      lowerLimit: 2,
-                      upperLimit: 1,
-                      stepValue: 2,
-                      iconSize: 20,
+                      lowerLimit: 0,
+                      upperLimit: 9,
+                      stepValue: 1,
+                      iconSize: 21,
                       value: 0)
                 ],
               ),
@@ -63,7 +71,7 @@ class DetailsContainer extends StatelessWidget {
               color: Colors.grey,
             ),
             const Padding(
-              padding: EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+              padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
