@@ -49,6 +49,16 @@ This project relies on some Flutter packages for UI components and navigation. Y
 
 Ensure you have these dependencies added to your project's `pubspec.yaml` and run `flutter pub get` to install them.
 
+## Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+- Thanks to the Flutter and Firebase communities for their invaluable resources.
+
+## Contact
+For any inquiries or support, contact us at [princeukaga@gmail.com].
 
 Thank you for using this Flutter Furniture Store App UI template! We hope it helps you create a stunning and user-friendly furniture shopping app.
