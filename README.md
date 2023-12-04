@@ -1,4 +1,4 @@
-# Furniture Store App UI - Flutter
+# Furniture Store App UI
 
 ## Overview
 
@@ -41,7 +41,6 @@ https://github.com/emekss/Furniture_Store_UI/assets/110977719/f4ae25e6-d89c-4acf
 
 
 
-
 ## Dependencies
 
 This project relies on some Flutter packages for UI components and navigation. You can find these dependencies in the `pubspec.yaml` file:
@@ -50,8 +49,6 @@ This project relies on some Flutter packages for UI components and navigation. Y
 
 Ensure you have these dependencies added to your project's `pubspec.yaml` and run `flutter pub get` to install them.
 
-## Feedback and Contributions
 
-We welcome your feedback and contributions to improve this UI template. If you encounter any issues or have suggestions for enhancements, please create an issue in the GitHub repository.
 
 Thank you for using this Flutter Furniture Store App UI template! We hope it helps you create a stunning and user-friendly furniture shopping app.
